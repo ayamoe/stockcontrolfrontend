@@ -1,0 +1,223 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toolbar input,
+.toolbar select {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid #d9dee5;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    outline: none;
+    font-size: 13px;
+}
+
+.toolbar input {
+    width: 220px;
+}
+
+.toolbar select {
+    min-width: 130px;
+    cursor: pointer;
+}
+
+.toolbar input:focus,
+.toolbar select:focus {
+    border-color: #82ec74;
+    box-shadow: 0 0 0 3px rgba(130, 236, 116, 0.15);
+}
+
+
+/* Table */
+
+.table-card {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-card table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 14px;
+}
+
+
+/* Table Header */
+
+.table-card thead {
+    background: #f4f7f2;
+}
+
+.table-card th {
+    padding: 13px 16px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #667085;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* Table Body */
+
+.table-card td {
+    padding: 13px 16px;
+    color: #344054;
+    border-bottom: 1px solid #f0f1f3;
+    white-space: nowrap;
+}
+
+.table-card tbody tr {
+    transition: background 0.15s ease;
+}
+
+.table-card tbody tr:hover {
+    background: #f8faf8;
+}
+
+
+/* Name */
+
+.table-card td strong {
+    color: #1d2939;
+    font-weight: 600;
+}
+
+
+/* Serial Number */
+
+.muted {
+    color: #98a2b3 !important;
+}
+
+
+/* Status */
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 75px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.status.available {
+    background: #e8f8e8;
+    color: #219653;
+}
+
+.status.assigned {
+    background: #e8f0ff;
+    color: #2563eb;
+}
+
+.status.repair {
+    background: #fff3e0;
+    color: #e67e22;
+}
+
+.status.retired {
+    background: #f1f1f1;
+    color: #777;
+}
+
+
+/* Details Column */
+
+.table-card th:last-child,
+.table-card td:last-child {
+    width: 150px;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+/* Action Buttons */
+
+.icon-btn {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    margin-right: 6px;
+    border: 1px solid #dfe3e8;
+    border-radius: 7px;
+    background: #fff;
+    color: #344054;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+}
+
+.icon-btn:hover {
+    background: #f0fdf0;
+    border-color: #82ec74;
+    color: #238b21;
+}
+
+
+/* Details Button */
+
+.details-btn {
+    height: 34px;
+    padding: 0 12px;
+    margin-left: 2px;
+    border: 1px solid #dfe3e8;
+    border-radius: 7px;
+    background: #fff;
+    color: #344054;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.details-btn:hover {
+    background: #f0fdf0;
+    border-color: #82ec74;
+    color: #238b21;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .table-card {
+        overflow-x: auto;
+    }
+
+    .table-card table {
+        min-width: 900px;
+    }
+
+    .toolbar input {
+        width: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .toolbar {
+        width: 100%;
+    }
+
+    .toolbar input {
+        flex: 1;
+        width: auto;
+    }
+}

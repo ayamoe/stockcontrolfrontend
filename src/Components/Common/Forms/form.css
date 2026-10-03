@@ -1,0 +1,97 @@
+.item-form {
+    width: 100%;
+    height: 70%;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.item-form table {
+    width: 100%;
+    min-width: 700px;
+    max-height: 500px;
+    border-collapse: collapse;
+}
+
+.item-form thead {
+    background: #f7f8fa;
+}
+
+.item-form th {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.item-form td {
+    padding: 9px 10px;
+    border-bottom: 1px solid #eef0f3;
+    vertical-align: middle;
+}
+
+.item-form tbody tr:hover {
+    background: #fafbfc;
+}
+
+.item-form input,
+.item-form select {
+    width: 100%;
+    height: 38px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #d9dee7;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #17233c;
+    font-size: 13px;
+    outline: none;
+}
+
+.item-form input:focus,
+.item-form select:focus {
+    border-color: #4f6ef7;
+}
+
+.item-form input::placeholder {
+    color: #a0a7b4;
+}
+
+.item-form th:last-child {
+    width: 55px;
+    text-align: center;
+}
+
+.item-form td:last-child {
+    width: 55px;
+    text-align: center;
+}
+
+.add-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #d9dee7;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #4f6ef7;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.add-btn:hover {
+    background: #4f6ef7;
+    color: #ffffff;
+    border-color: #4f6ef7;
+}
+
+.add-btn:active {
+    transform: scale(0.95);
+}
